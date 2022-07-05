@@ -683,6 +683,11 @@ body {
     left: 35vw;
   }
 }
+@media (max-width: 565px) {
+  .category {
+    margin-top: 0px;
+  }
+}
 .rings-body {
   display: -webkit-box;
   display: -ms-flexbox;
