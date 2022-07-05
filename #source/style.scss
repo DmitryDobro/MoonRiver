@@ -531,25 +531,19 @@ body{
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
-    z-index: 30;
-    position: relative;
-    height: 40vw;
+    // height: 40vw;
     &-item{
-        
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
         flex: 1 0 40%;
-        background: url(./../img/style/women5.jpg) no-repeat center/cover;
-        height: auto;
+        // height: auto;
         &:first-child{
-            background: url(./../img/style/men6.jpg) no-repeat center/cover;
             margin-right: 20px;
         }
     }
     &-img{
-        position: absolute;
         width: 100%;
     }
     img{
@@ -561,7 +555,9 @@ body{
 }
 
 .category-link {
-    position: relative;
+    position: absolute;
+    top: 40%;
+    left: 13vw;
 }
 .category-smallTitle {
     font-weight: 400;
@@ -591,17 +587,27 @@ body{
     }
 }
 
-
-@media(max-width:565px){
+@media(max-width:700px){
     .category{
-        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        &-item{
+            &:first-child{
+                margin:0px 0px 20px;
+            }  
+        }
     }
-}
+         .category-link {
+                position: absolute;
+                top: 45%;
+                left: 35vw;
+            }
+        }
+     
 // ===========================================================================
 .rings {  
     &-body{
         display: flex;
-        position: relative;
         margin-top: 10px;
     }   
     &-cards{
