@@ -1,0 +1,132 @@
+.footer {
+    background-color: #272727;
+    padding: 95px 0px;
+    &-body{
+        display: flex;
+        flex-direction: column;
+    }
+    &-item{
+        display: flex;
+    }
+    &-list{
+        display: flex;
+        margin-bottom: 90px;
+        li{
+            margin-right: 70px;
+            a{
+                font-weight: 450;
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;  
+                color: #FFFFFF;
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+    &-column{
+        flex: 1 0 25%;
+        margin-right: 20px;
+        &:first-child{
+            margin-right: 250px;
+        }
+        &:last-child{
+            margin-right: 0px;
+        }
+        div{
+            margin-bottom: 15px;
+        }
+    }
+    &-logo{
+        margin-top: 10%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &-column-title{
+        font-size: 14px;
+        color: #fff;
+    }
+    &-icons{
+        display: flex;
+    }
+    &-input{
+        input{
+            background: none;
+            border-bottom: 2px solid white;
+        }
+    }
+
+}
+
+
+
+
+@media(max-width:1000px){
+    .footer{
+        font-size: 14px;
+        div{
+            font-size: inherit;
+        }
+        &-column{
+            &:first-child {
+                margin-right: 100px;
+            }
+        }
+        &-list{
+            li{
+                margin-right: 20px;
+                a{
+                    font-size: 12px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+@media(max-width:750px){
+    .footer{
+        .conteiner{
+            padding: 0px 5px;
+        }
+        &-body{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &-item{
+            display: flex;
+            flex-direction: column;
+        }
+        &-column-title._titleForm{
+            font-size: 11px;
+        }
+        &-list{
+            margin:0px 20px 0px 0px;
+            display: inline;
+            li{
+                margin: 0px 0px 45px 0px;
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+        &-logo{
+            margin-top: 0px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+        }
+        &-column{
+            flex: auto;
+            &:first-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}

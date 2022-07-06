@@ -1,0 +1,112 @@
+.header {
+  margin: 70px 0 340px;
+}
+.header::before {
+  content: "";
+  width: 40%;
+  min-height: 1024px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #272727;
+}
+.header-body {
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-logo {
+  z-index: 10;
+  width: 100%;
+}
+.header-menu {
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 100px;
+}
+.header-menu-item {
+  margin-right: 40px;
+}
+.header-menu-item:last-child {
+  margin-right: 0px;
+}
+
+@media (max-width: 780px) {
+  .header-menu-list {
+    margin-right: 20px;
+  }
+  .header::before {
+    content: "";
+    width: 30%;
+    min-height: 1024px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #272727;
+  }
+  .header-menu-item {
+    margin-right: 20px;
+  }
+  .header-menu-item img {
+    height: 20px;
+    width: 20px;
+  }
+  .header-menu-item:last-child {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 625px) {
+  .header-logo img {
+    width: 150px;
+    height: 30px;
+  }
+  .header-menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 4px;
+  }
+  .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    z-index: 10;
+  }
+  .header::before {
+    content: "";
+    width: 30%;
+    min-height: 1074px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #272727;
+  }
+  .header-menu-item {
+    margin: 0px 0 20px 0;
+  }
+  .header-menu-item:last-child {
+    margin-bottom: 0px;
+  }
+  .header-burger {
+    margin-bottom: 20px;
+  }
+}

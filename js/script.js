@@ -1,24 +1,28 @@
-let burgers = document.querySelectorAll('.header-burger')
-let burger = document.querySelectorAll('.header-burger')
+let burgerHeader = document.getElementById('burgerHeader')
+let burgerMenu = document.getElementById('burgerMenu')
 let menu = document.querySelector('.menu')
+console.log(burgerMenu);
 
-for(burger of burgers){
-  burger.addEventListener('click', (event) => {
-    // event.target.classList.toggle('_active') 
-      // burger.classList.toggle('_active') 
-      menu.classList.toggle('_active')
-    
-     
-    document.addEventListener('click', (event) =>{
-        if(!event.target.closest('.menu') && !event.target.closest('.header-burger')){
+
+burgerHeader.addEventListener('click', (event) => {
+    menu.classList.toggle('_active')
+    burgerMenu.classList.toggle('_active') 
+    burgerHeader.classList.toggle('_active') 
+  })
+  burgerMenu.addEventListener('click', (event) => {
+    menu.classList.toggle('_active')
+    burgerMenu.classList.toggle('_active') 
+    burgerHeader.classList.toggle('_active') 
+  })
+  document.addEventListener('click', (event) =>{
+        if(!event.target.closest('.menu') && !event.target.closest('.burger._active')){
             // burger.classList.remove('active') 
             console.log(123);
             menu.classList.remove('_active') 
+            burgerMenu.classList.remove('_active') 
+            burgerHeader.classList.remove('_active') 
         }
     })
-  })
-  
-}
 
 
 const swiper = new Swiper('.swiper', {
