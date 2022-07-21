@@ -7,6 +7,9 @@ body{
     width: 100vw;
     
 }
+body._lock{
+    overflow: hidden;
+}
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -19,9 +22,6 @@ body{
     z-index: 10;
 }
 
-.footer {
-
-}
 .conteiner {
     max-width: 1080px;
     margin: 0 auto;

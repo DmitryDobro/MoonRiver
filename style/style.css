@@ -82,6 +82,10 @@ body {
   width: 100vw;
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -926,6 +930,10 @@ body {
   .rings-cards {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .rings-column {
@@ -944,11 +952,6 @@ body {
     display: none;
   }
 }
-@media (max-width: 810px) {
-  .rings-column {
-    width: 100%;
-  }
-}
 .rings-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -958,11 +961,6 @@ body {
 @media (max-width: 810px) {
   .rings-card {
     margin-bottom: 0px;
-  }
-  .rings-card:nth-child(even) {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
   }
 }
 .rings-item {
@@ -981,6 +979,7 @@ body {
   width: 400px;
   height: 400px;
   background-color: #EDEDED;
+  width: 100%;
 }
 .rings-img {
   height: 250px;

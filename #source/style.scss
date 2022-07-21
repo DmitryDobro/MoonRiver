@@ -317,6 +317,7 @@
         justify-content: space-between;
         @media(max-width:810px){
             flex-wrap: wrap;
+            flex-direction: column;
     }
     }  
     &-column{
@@ -328,20 +329,17 @@
             display: none;
         }
         }
-        @media(max-width:810px){
-            width: 100%;
-        }
     }  
     &-card{
         display: flex;
         margin: 0px 0px 20px 0px;
         @media(max-width:810px){
            margin-bottom: 0px;
-            &:nth-child(even){
-                justify-content: flex-end;
-                // margin: 0px 0px 20px 20px;
+            // &:nth-child(even){
+            //     justify-content: flex-end;
+            //     // margin: 0px 0px 20px 20px;
                 
-            }
+            // }
     }  
     }   
     &-item{
@@ -352,6 +350,7 @@
         width: 400px;
         height: 400px;
         background-color: #EDEDED;
+        width: 100%;
     }  
     &-img{
         height: 250px;   
